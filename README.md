@@ -18,6 +18,7 @@ Arcada MIND, 2026-2027. Rules for Claude in `CLAUDE.md`. Reusable prompts in `pr
 - Final scale: 51-60 = 1, 61-70 = 2, 71-80 = 3, 81-90 = 4, 91-100 = 5.
 - Soft deadlines (`course/Lecture1/grading`): max grade 95% for 1-7 days late, 90% for 8-14, 80% for 15-21, 70% for 22-27, 50% for 28-30.
 - Homework: explain every step in markdown, conclude on results. Do not paste code without explanation.
+- AI use: allowed if the AI is named (confirmed 18.10.2026). Disclosure cell goes last in every graded notebook.
 
 ## Lectures
 | # | Topic | Primary notebook | Summary | Concepts done |

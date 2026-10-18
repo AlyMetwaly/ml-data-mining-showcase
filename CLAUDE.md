@@ -16,6 +16,7 @@ Source: lecture 1 and 2 transcripts plus itslearning screenshots.
 - UNKNOWN: how the 6 hands-on scores map to the remaining 10 points. Do not guess. Flag it in README.
 - Lecture 1: use `01-supervised_learning.ipynb`. NOT the `_instructor` or `_student` versions, NOT the `.py` (it is empty). The lecturer said this in class.
 - Transcripts are auto-generated and partial. They cover only fragments of each lecture. Notebooks are the primary source. Transcripts add emphasis, warnings, and student Q&A.
+- AI-use policy (confirmed by Aly, 18.10.2026): AI is allowed if I name the AI I used. Every graded notebook ends with an AI disclosure markdown cell.
 - ASSUMPTION to verify: the course likely follows Mueller and Guido, "Introduction to Machine Learning with Python" (mglearn package, same examples). Check notebook imports before relying on this.
 
 ## Folder rules
@@ -32,7 +33,9 @@ Goal: I can explain and defend every line I submit.
 3. I write, or we pair. You review, point to bugs, and explain why.
 4. Write full solution code only when I say "write it". Even then, explain each block in 1 to 2 lines.
 5. Pre-submit check: Restart and Run All from a clean kernel. Every question answered. Outputs visible. Written answers in markdown cells. File name matches what itslearning expects.
-6. Log AI use in `homework/HWn/ai-use-log.md` or `handson/HOn/ai-use-log.md`: what I asked, what you produced, what I changed. Check the course and Arcada AI-use policy. If it is unclear, flag it before I submit.
+6. Log AI use in `homework/HWn/ai-use-log.md` or `handson/HOn/ai-use-log.md`: what I asked, what you produced, what I changed. Policy: AI is allowed if I name the AI I used. Add this markdown cell as the last cell of every graded notebook, naming every model actually used:
+   > AI use: I used Claude (Anthropic) via claude.ai (Claude Opus 5.5) and Claude Code (Claude Opus 5.5) to explain concepts, suggest an approach, and review my code. I ran and verified all code and results myself.
+   If the models differ, name each one. Pre-submit check fails if the cell is missing.
 - If a solution file exists in `course/` (for example `Lecture 2_hand_ons_solution`), tell me what it is first. Do not copy from it. Use it only to check my answer after I finish.
 - If I have a homework partner, ask who did what so the log is accurate.
 
