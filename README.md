@@ -6,7 +6,7 @@ Arcada MIND, 2026-2027. Rules for Claude in `CLAUDE.md`. Reusable prompts in `pr
 | Item | Covers | Deadline | Points | Status | Next action |
 |---|---|---|---|---|---|
 | Hands-on 1 | L1: linear models (cells 144-148) + tree vs SVC on wine (cells 210-212) | check itslearning | max 2 | ? | Aly to confirm status and deadline |
-| Hands-on 2 | L2: SVC on wine quality, scale, accuracy > 0.5 (cells 75-78) | **21.10.2026 23:59** | max 2 | In progress | Work in `handson/HO2/` |
+| Hands-on 2 | L2: SVC on wine quality, scale, accuracy > 0.5 (cells 75-78) | **21.10.2026 23:59** | max 2 | Code runs: 0.43 to 0.597 | Write approach + conclusion cells, confirm file name, upload |
 | Homework 1 | L1 + L2 (regression, classification, scaling, KernelPCA + clustering) | **30.10.2026** | 30 | Not started | Plan tasks, aim to finish 28.10 |
 | Hands-on 3 to 6 | Lectures 3 to 6 | TBD | max 2 each | | |
 | Homework 2 | Lectures 3 to 4 | TBD | 30 | | |
@@ -64,3 +64,4 @@ See `applied/ideas.md`.
 | Date | What we did | Next |
 |---|---|---|
 | 18.10.2026 | Phase 0 inventory, Phase 1 repo setup, env built | Hands-on 2 in coach mode |
+| 18.10.2026 | AI policy recorded. HO2 code reviewed, clean run passes | HO2 written cells, then upload by 21.10 |
