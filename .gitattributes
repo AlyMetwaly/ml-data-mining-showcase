@@ -1,0 +1,2 @@
+# Keep course originals byte-identical: no line-ending conversion.
+course/** -text

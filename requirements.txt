@@ -1,0 +1,26 @@
+# One environment for the whole course. Python 3.13 (lecturer ran 3.13.5).
+# Built from the real imports in course/Lecture1 and course/Lecture2 notebooks.
+# mglearn 0.2.0 tested against these pins: all 17 helpers the notebooks use work.
+
+# core ML stack
+numpy==2.5.4
+scipy==1.18.1
+pandas==3.0.6
+scikit-learn==1.9.1
+mglearn==0.2.0
+
+# plotting
+matplotlib==3.11.2
+seaborn==0.13.2
+plotly==7.1.0
+imageio-ffmpeg==0.6.0
+# Python wrapper only. Rendering trees (L1 cell 165) also needs the Graphviz program on PATH.
+graphviz==0.21
+
+# notebooks
+jupyterlab==4.6.3
+ipykernel==7.3.0
+nbconvert==7.17.1
+
+# repo tooling (transcript conversion)
+python-docx==1.2.0

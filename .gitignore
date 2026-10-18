@@ -1,0 +1,20 @@
+# Jupyter and Python noise
+.ipynb_checkpoints/
+.jupyter/
+__pycache__/
+*.pyc
+.Rhistory
+
+# Rebuildable outputs
+**/cache/
+**/iframe_figures/
+
+# Local environment and secrets
+.venv/
+.env
+
+# Scratch work (copies for experiments)
+scratch/
+
+# Original transcripts contain classmate names. Redacted .md versions are committed instead.
+course/transcripts/*.docx
