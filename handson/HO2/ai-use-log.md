@@ -13,6 +13,8 @@ Policy: AI is allowed if I name the AI I used (confirmed 18.10.2026). Disclosure
 | 18.10.2026 | Claude Code: record AI policy, add disclosure cell | Updated `CLAUDE.md`, this log, and added the disclosure cell. | |
 | 18.10.2026 | Claude Code: review my code, run pre-submit check | Pasted my code into cell 6, ran Restart and Run All, gave review notes. Checked that 0.43 equals always guessing quality 6 (0.433). | Code is the claude.ai example with my own comments ("Step 1: scaling only", "Step 2: optional tuning"). Approach and conclusion cells: still to write. |
 
+| 18.10.2026 | Claude (claude.ai and Claude Code): draft the approach and conclusion text | Drafted both cells. Claude Code filled in C=1, gamma=1 and the 0.433 baseline from the run output. It changed "The test set was used once, at the end" to "only used for scoring, never for fitting or choosing settings", because the code scores the test set twice. It updated the disclosure cell. | I reviewed and edited the text. |
+
 Results (clean run, 18.10.2026): unscaled 0.43, scaled 0.553, tuned (C=1, gamma=1) CV 0.614, test 0.597.
 
 Instructor solution file `course/Lecture2/Lecture 2_hand_ons_solution.txt` exists. Not used. Only to compare after I finish.
