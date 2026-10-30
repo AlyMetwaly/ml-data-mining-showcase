@@ -18,3 +18,7 @@ scratch/
 
 # Original transcripts contain classmate names. Redacted .md versions are committed instead.
 course/transcripts/*.docx
+
+# Homework dataset downloads (the notebooks fetch them from UCI)
+homework/HW*/data/
+notes/homework/HW*/data/

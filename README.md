@@ -7,7 +7,7 @@ Arcada MIND, 2026-2027. Rules for Claude in `CLAUDE.md`. Reusable prompts in `pr
 |---|---|---|---|---|---|
 | Hands-on 1 | L1: linear models (cells 144-148) + tree vs SVC on wine (cells 210-212) | check itslearning (likely 20 or 21.10) | max 2 | Ready: clean run passes | Review, then upload `handson/HO1/hands-on-1.ipynb` |
 | Hands-on 2 | L2: SVC on wine quality, scale, accuracy > 0.5 (cells 75-78) | **21.10.2026 23:59** | max 2 | Ready: pre-submit passes (0.43 to 0.597) | Confirm itslearning file name, upload `handson/HO2/hands-on-2.ipynb` |
-| Homework 1 | L1 + L2 (regression, classification, scaling, KernelPCA + clustering) | **30.10.2026** | 30 | Not started | Plan tasks, aim to finish 28.10 |
+| Homework 1 | L1 + L2 (regression, classification, scaling, KernelPCA + clustering) | **30.10.2026** (notebook cell 0) | 30 | Ready: solved by Claude on request, clean run (0 errors, 0 warnings) | Review, then upload `homework/HW1/Aly-Metwaly-homework-1.ipynb` today |
 | Hands-on 3 to 6 | Lectures 3 to 6 | TBD | max 2 each | | |
 | Homework 2 | Lectures 3 to 4 | TBD | 30 | | |
 | Homework 3 | Lectures 5 to 6 | TBD | 30 | | |
@@ -54,7 +54,7 @@ If PowerShell blocks the activate script: `Set-ExecutionPolicy -Scope Process By
 ## Open questions
 - How do the 6 hands-on scores map to 10 points?
 - Hands-on 1: exact deadline? (not submitted as of 19.10)
-- Homework 1 Task 4 dataset.
+- Homework 1 Task 4 dataset: used Olivetti faces as described. The stray line "Change this into another dataset." is still unexplained.
 - Other hands-on slides in L2 (cells 121, 133, 141, 154) have no task text. Were tasks given orally?
 
 ## Applied ideas backlog
@@ -67,3 +67,4 @@ See `applied/ideas.md`.
 | 18.10.2026 | AI policy recorded. HO2 code reviewed, clean run passes | HO2 written cells, then upload by 21.10 |
 | 18.10.2026 | HO2 approach, conclusion, disclosure written. Pre-submit passes | Upload HO2 by 21.10. Then Hands-on 1 status, Homework 1 plan |
 | 19.10.2026 | HO1 written by Claude on request, clean run passes | Upload HO1 and HO2. Then Homework 1 plan |
+| 30.10.2026 | HW1 solved by Claude (coach mode overridden on request). Submission in `homework/HW1/`, teaching notebook and walkthrough in `notes/homework/HW1/` | Review and upload HW1 today (deadline 30.10). Study the walkthrough |
