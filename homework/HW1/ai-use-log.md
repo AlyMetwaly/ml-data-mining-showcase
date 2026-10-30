@@ -10,6 +10,7 @@ Solo submission. No partner.
 | Date | What I asked | What the AI produced | What I changed or wrote myself |
 |---|---|---|---|
 | 30.10.2026 | Override coach mode for Homework 1: "solve it fully on your own". Keep a clean submission and separate teaching material. | Copied the task cells from `course/homework/Homework1.ipynb` (original not edited) into `Aly-Metwaly-homework-1.ipynb`. Wrote all code, the short answers, the conclusion and the disclosure cell. Ran Restart and Run All: 0 errors, 0 warnings. Checked every number in the text against the outputs. | Review before upload (still to do). |
+| 30.10.2026 | I reported a TypeError in the Task 3a cell when running in my Jupyter (Python 3.11, older Matplotlib) | Replaced `boxplot(..., orientation='horizontal')` (needs Matplotlib 3.10+) with a default box plot that works on every version. Reran: 0 errors, all text outputs unchanged. Rebuilt the teaching notebook. | |
 | 30.10.2026 | Teaching material, never submitted | `notes/homework/HW1/HW1-teaching.ipynb` (the submission plus 27 teaching cells, outputs copied unchanged) and `HW1-walkthrough.md`. | |
 
 Decisions the AI made that I should be able to defend:
