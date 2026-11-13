@@ -8,8 +8,10 @@ Arcada MIND, 2026-2027. Rules for Claude in `CLAUDE.md`. Reusable prompts in `pr
 | Hands-on 1 | L1: linear models (cells 144-148) + tree vs SVC on wine (cells 210-212) | check itslearning (likely 20 or 21.10) | max 2 | Ready: clean run passes | Review, then upload `handson/HO1/hands-on-1.ipynb` |
 | Hands-on 2 | L2: SVC on wine quality, scale, accuracy > 0.5 (cells 75-78) | **21.10.2026 23:59** | max 2 | Ready: pre-submit passes (0.43 to 0.597) | Confirm itslearning file name, upload `handson/HO2/hands-on-2.ipynb` |
 | Homework 1 | L1 + L2 (regression, classification, scaling, KernelPCA + clustering) | **30.10.2026** (notebook cell 0) | 30 | Ready: solved by Claude on request, clean run (0 errors, 0 warnings) | Review, then upload `homework/HW1/Aly-Metwaly-homework-1.ipynb` today |
-| Hands-on 3 to 6 | Lectures 3 to 6 | TBD | max 2 each | | |
-| Homework 2 | Lectures 3 to 4 | TBD | 30 | | |
+| Hands-on 3 | L3: GridSearch + wine (cells 70, 220; confirm which is graded) | check itslearning | max 2 | Not started | Confirm task + deadline |
+| Hands-on 4 | L4: Pima imputation compare (cell 39) | check itslearning | max 2 | Not started | Confirm deadline |
+| Hands-on 5 to 6 | L5+ | TBD | max 2 each | | |
+| Homework 2 | L3 + L4 (Glass, Sonar, Census) | **20.11.2026** (HW2 cell 0) | 30 | Not started | Plan after HO3/4; finish by 18.11 |
 | Homework 3 | Lectures 5 to 6 | TBD | 30 | | |
 
 ### Grading facts (L1 notebook, cells 4 to 8)
@@ -25,6 +27,9 @@ Arcada MIND, 2026-2027. Rules for Claude in `CLAUDE.md`. Reusable prompts in `pr
 |---|---|---|---|---|
 | 1 | Supervised learning | `course/Lecture1/01-supervised_learning.ipynb` | | |
 | 2 | Preprocessing, dimensionality reduction, clustering | `course/Lecture2/02-Unsupervised_Learning.ipynb` | | |
+| 3 | Model evaluation, GridSearch, pipelines, AutoML | `course/Lecture3/03-model_evaluation_and_improvement_Gridsearch_pipelines.ipynb` | | |
+| 4 | Data cleaning, imputation, feature engineering | `course/Lecture4/0402-Data_cleaning_Imputation_and_others.ipynb` | | |
+| 5 | Frequent itemsets | `course/Lecture5/Frequent_Itemsets.ipynb` | | |
 
 - L1: use `01-supervised_learning.ipynb` only. Not `_instructor`, not `_student`, not the empty `.py` (lecturer, L2 transcript 1:07:01).
 - Course follows Mueller and Guido, *Introduction to Machine Learning with Python* (confirmed: notebooks use `mglearn` book helpers).
@@ -36,6 +41,8 @@ Arcada MIND, 2026-2027. Rules for Claude in `CLAUDE.md`. Reusable prompts in `pr
 - Some notebooks exist only in `.ipynb_checkpoints/` (not in git): `Hands-on_lecture1`, `homeworks`, `extras`, `02-supervised-unsupervised_learning`, `03-Unsupervised_Learning(_I)`, `Assignment 2`. Mostly older course versions.
 - Homework 1 Task 4 has a stray line "Change this into another dataset." Ask the lecturer whether Olivetti faces is still the dataset.
 - Path rules: notebooks use only relative paths inside their own folder. A copied L1 notebook needs `data/`, `grading`, `images/` beside it. Data also loads from UCI URLs and sklearn downloads (internet needed, LFW faces ~200 MB first time).
+- **L3-L5 imports not in `requirements.txt` (proposed only):** `tpot`, `shap` (L3 lecture); `imbalanced-learn`, `opencv-python`, `albumentations`, `impyute` (L4 lecture demos). Homework 2 uses sklearn/pandas stack only unless you add AutoML (TPOT).
+- L4 empty folder `04-Representing_Data _Engineering_Features_Working_Text_data/` came with the zip. No notebook inside.
 - L1 cell 165 needs the Graphviz program on PATH. Not installed. Decision pending.
 
 ## Environment
@@ -69,3 +76,4 @@ See `applied/ideas.md`.
 | 19.10.2026 | HO1 written by Claude on request, clean run passes | Upload HO1 and HO2. Then Homework 1 plan |
 | 30.10.2026 | HW1 solved by Claude (coach mode overridden on request). Submission in `homework/HW1/`, teaching notebook and walkthrough in `notes/homework/HW1/` | Review and upload HW1 today (deadline 30.10). Study the walkthrough |
 | 13.11.2026 | Wrote `prompts/05-cursor-handover.md` to hand the Block 2 files (L3 and L4, Homework 2, Hands-on 3 and 4) to Cursor | Attach files in Cursor, paste the prompt, then answer its inventory questions |
+| 13.11.2026 | Unzipped L3-L5 from Downloads, flattened folders, added `course/homework/Homework2.ipynb`, inventory Step 2 (waiting on "go") | Confirm HO1/HO2/HW1 uploads; itslearning HO3/4 deadlines; reply **go** for scratch runs + coach mode |
