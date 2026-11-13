@@ -48,12 +48,14 @@ Report each risk with the exact files. Do not fix anything yet. Known risks to c
 - **Git identity.** Commit author email is `aly.metwaly@outlook.com`. Ask me whether that is what I want public, or whether to use the GitHub noreply address.
 - **Missing.** No LICENSE, no remote, no `.cursor/` rules, no `AGENTS.md`.
 
-Then ask me these decisions, one per line, with your recommended default first:
-1. `course/` in the public repo? Recommended: no. Replace it with `course/README.md` that says what is not included and why.
-2. Graded solution notebooks (HO1 to HO4, HW1, HW2) in the public repo? Recommended: not until grades are final and the lecturer agrees. Meanwhile publish approach write-ups, AI-use logs, results tables and the process, not the full solutions.
-3. Mention my employer by name? Recommended: no. Say "enterprise AI adoption" instead.
-4. Public author email: outlook or GitHub noreply?
-5. License: MIT for my own code and notes, with course material excluded? Recommended: yes.
+Decided by me already (do not ask again):
+- `course/` stays out of the public repo. Replace it with `course/README.md` that says what is not included and why.
+- Graded solution notebooks (HO1 to HO4, HW1, HW2) and `notes/homework/` stay out until grades are final and the lecturer agrees. Meanwhile publish approach write-ups, AI-use logs, results tables and the process, not the full solutions. Write each write-up from the logs and notebook outputs, without pasting solution code.
+
+Still to ask me, one per line, with your recommended default first:
+1. Mention my employer by name? Recommended: no. Say "enterprise AI adoption" instead.
+2. Public author email: outlook or GitHub noreply?
+3. License: MIT for my own code and notes, with course material excluded? Recommended: yes.
 
 ## Step 2: Build the public copy (never touch the private repo's history)
 
