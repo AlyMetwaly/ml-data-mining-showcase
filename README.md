@@ -68,3 +68,4 @@ See `applied/ideas.md`.
 | 18.10.2026 | HO2 approach, conclusion, disclosure written. Pre-submit passes | Upload HO2 by 21.10. Then Hands-on 1 status, Homework 1 plan |
 | 19.10.2026 | HO1 written by Claude on request, clean run passes | Upload HO1 and HO2. Then Homework 1 plan |
 | 30.10.2026 | HW1 solved by Claude (coach mode overridden on request). Submission in `homework/HW1/`, teaching notebook and walkthrough in `notes/homework/HW1/` | Review and upload HW1 today (deadline 30.10). Study the walkthrough |
+| 13.11.2026 | Wrote `prompts/05-cursor-handover.md` to hand the Block 2 files (L3 and L4, Homework 2, Hands-on 3 and 4) to Cursor | Attach files in Cursor, paste the prompt, then answer its inventory questions |
