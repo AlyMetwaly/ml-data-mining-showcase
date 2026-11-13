@@ -1,79 +1,65 @@
-# ML and Data Mining: Dashboard
+# ML and data mining coursework (Arcada MIND), built with AI agents under human review
 
-Arcada MIND, 2026-2027. Rules for Claude in `CLAUDE.md`. Reusable prompts in `prompts/`.
+**Fact:** This is student coursework plus documentation. It is not a production ML deployment.
 
-## Deadlines
-| Item | Covers | Deadline | Points | Status | Next action |
-|---|---|---|---|---|---|
-| Hands-on 1 | L1: linear models (cells 144-148) + tree vs SVC on wine (cells 210-212) | check itslearning (likely 20 or 21.10) | max 2 | Ready: clean run passes | Review, then upload `handson/HO1/hands-on-1.ipynb` |
-| Hands-on 2 | L2: SVC on wine quality, scale, accuracy > 0.5 (cells 75-78) | **21.10.2026 23:59** | max 2 | Ready: pre-submit passes (0.43 to 0.597) | Confirm itslearning file name, upload `handson/HO2/hands-on-2.ipynb` |
-| Homework 1 | L1 + L2 (regression, classification, scaling, KernelPCA + clustering) | **30.10.2026** (notebook cell 0) | 30 | Ready: solved by Claude on request, clean run (0 errors, 0 warnings) | Review, then upload `homework/HW1/Aly-Metwaly-homework-1.ipynb` today |
-| Hands-on 3 | L3: GridSearch + wine (cells 70, 220; confirm which is graded) | check itslearning | max 2 | Not started | Confirm task + deadline |
-| Hands-on 4 | L4: Pima imputation compare (cell 39) | check itslearning | max 2 | Not started | Confirm deadline |
-| Hands-on 5 to 6 | L5+ | TBD | max 2 each | | |
-| Homework 2 | L3 + L4 (Glass, Sonar, Census) | **20.11.2026** (HW2 cell 0) | 30 | Not started | Plan after HO3/4; finish by 18.11 |
-| Homework 3 | Lectures 5 to 6 | TBD | 30 | | |
+## What this repo shows (AI deployment manager lens)
 
-### Grading facts (L1 notebook, cells 4 to 8)
-- 100 points: 3 exercises x 30 = 90, hands-on = 10.
-- Hands-on: notebook says "6 Hands-on Exercises ... (5 x 2 points = 10 points)". **Assumption, not confirmed:** best 5 of 6 count. Ask the lecturer.
-- Final scale: 51-60 = 1, 61-70 = 2, 71-80 = 3, 81-90 = 4, 91-100 = 5.
-- Soft deadlines (`course/Lecture1/grading`): max grade 95% for 1-7 days late, 90% for 8-14, 80% for 15-21, 70% for 22-27, 50% for 28-30.
-- Homework: explain every step in markdown, conclude on results. Do not paste code without explanation.
-- AI use: allowed if the AI is named (confirmed 18.10.2026). Disclosure cell goes last in every graded notebook.
+| Signal | Evidence |
+|---|---|
+| Honest evaluation (baselines, CV, cautious test use) | [HO2 write-up](handson/HO2/write-up.md), [HW1 write-up](homework/HW1/write-up.md), [ai-workflow.md](docs/ai-workflow.md) |
+| Data leakage and metric integrity | [HO2 integrity note](handson/HO2/write-up.md#integrity-note) |
+| Pipelines, imputation, AutoML discipline | [HO3](handson/HO3/write-up.md), [HO4](handson/HO4/write-up.md), [HW2](homework/HW2/write-up.md) |
+| Reproducible environment | [requirements.txt](requirements.txt), [smoke test](scripts/smoke_test.ps1) |
+| AI-use audit trail | [HO1 log](handson/HO1/ai-use-log.md), [HO3 log](handson/HO3/ai-use-log.md), [HW2 log](homework/HW2/ai-use-log.md) |
 
-## Lectures
-| # | Topic | Primary notebook | Summary | Concepts done |
-|---|---|---|---|---|
-| 1 | Supervised learning | `course/Lecture1/01-supervised_learning.ipynb` | | |
-| 2 | Preprocessing, dimensionality reduction, clustering | `course/Lecture2/02-Unsupervised_Learning.ipynb` | | |
-| 3 | Model evaluation, GridSearch, pipelines, AutoML | `course/Lecture3/03-model_evaluation_and_improvement_Gridsearch_pipelines.ipynb` | | |
-| 4 | Data cleaning, imputation, feature engineering | `course/Lecture4/0402-Data_cleaning_Imputation_and_others.ipynb` | | |
-| 5 | Frequent itemsets | `course/Lecture5/Frequent_Itemsets.ipynb` | | |
+## Built with Cursor and Claude
 
-- L1: use `01-supervised_learning.ipynb` only. Not `_instructor`, not `_student`, not the empty `.py` (lecturer, L2 transcript 1:07:01).
-- Course follows Mueller and Guido, *Introduction to Machine Learning with Python* (confirmed: notebooks use `mglearn` book helpers).
-- Transcripts: `course/transcripts/*.md` (redacted, partial). L1 covers 0:00-0:02 and 0:52-1:09. L2 covers 0:00-0:02, 0:58-1:09, 1:10-1:12.
+| Component | Tool | Model (as logged) | Human role |
+|---|---|---|---|
+| Repo setup, HO1, HO2, HW1 | Claude Code / claude.ai | Claude Opus 5.5 | Review, upload decisions, coach override on HW1 |
+| HO3, HO4, HW2 | Cursor agents | Auto agent (confirm exact model) | Requested solve, nbconvert verify, upload pending |
+| Showcase export and docs | Cursor agent | (this session; confirm) | Privacy rules, withheld solutions |
+| Showcase prompt | Claude Code | Claude Sonnet 5.5 (commit trailer) | Authored `prompts/06-cursor-github-showcase.md` |
 
-## Inventory notes (Phase 0, 18.10.2026)
-- `course/Lecture2/Lecture 2_hand_ons_solution.txt` is the instructor solution for Hands-on 2. Use only to check after finishing.
-- `course/Lecture1/tree.dot` is generated output of L1 cell 163, not course content.
-- Some notebooks exist only in `.ipynb_checkpoints/` (not in git): `Hands-on_lecture1`, `homeworks`, `extras`, `02-supervised-unsupervised_learning`, `03-Unsupervised_Learning(_I)`, `Assignment 2`. Mostly older course versions.
-- Homework 1 Task 4 has a stray line "Change this into another dataset." Ask the lecturer whether Olivetti faces is still the dataset.
-- Path rules: notebooks use only relative paths inside their own folder. A copied L1 notebook needs `data/`, `grading`, `images/` beside it. Data also loads from UCI URLs and sklearn downloads (internet needed, LFW faces ~200 MB first time).
-- **L3-L5 imports not in `requirements.txt` (proposed only):** `tpot`, `shap` (L3 lecture); `imbalanced-learn`, `opencv-python`, `albumentations`, `impyute` (L4 lecture demos). Homework 2 uses sklearn/pandas stack only unless you add AutoML (TPOT).
-- L4 empty folder `04-Representing_Data _Engineering_Features_Working_Text_data/` came with the zip. No notebook inside.
-- L1 cell 165 needs the Graphviz program on PATH. Not installed. Decision pending.
+**Proof links (checkable):**
 
-## Environment
-Python 3.13 venv in `.venv/`, pins in `requirements.txt`. From the repo root in PowerShell:
-```
+- Cursor co-author: commit `6ac1086` (see `git log`)
+- Claude trailers: commit `69ba22a` on private export lineage
+- AI-use log: [handson/HO2/ai-use-log.md](handson/HO2/ai-use-log.md)
+- Cursor rules: [.cursor/rules/course-study.mdc](.cursor/rules/course-study.mdc)
+
+## Results at a glance
+
+| Item | Headline metric | Source |
+|---|---|---|
+| HO2 wine SVC | 0.597 test accuracy after scale+tune | [HO2 log](handson/HO2/ai-use-log.md) |
+| HW1 Cannabis AUC | 0.895 CV ROC AUC setup B | [HW1 log](homework/HW1/ai-use-log.md) |
+| HO4 imputation | 0.7795 constant vs 0.7638 KNN | [HO4 log](handson/HO4/ai-use-log.md) |
+| HW2 Sonar | ~0.92 val ROC AUC | [HW2 log](homework/HW2/ai-use-log.md) |
+
+## Repo map
+
+| Path | Purpose |
+|---|---|
+| `docs/` | Agent workflow, deployment lens, Cursor evidence index |
+| `handson/`, `homework/` | AI logs and write-ups (not full submit notebooks) |
+| `course/README.md` | Why lecture materials are omitted |
+| `prompts/` | Reusable agent prompts (handover + showcase) |
+| `scripts/` | Public export list, smoke test |
+
+## Quick start (Windows PowerShell)
+
+```powershell
+git clone <your-showcase-url> ml-data-mining-showcase
+cd ml-data-mining-showcase
 py -3.13 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
-jupyter lab
+.\scripts\smoke_test.ps1
 ```
-If PowerShell blocks the activate script: `Set-ExecutionPolicy -Scope Process Bypass`, then activate again (applies to that window only).
 
-## Folders
-- `course/` originals, read-only. `notes/` summaries. `handson/`, `homework/` graded work. `applied/` bridges to my work. `scratch/` experiments (not in git).
+**Fact:** Graded notebooks need the private study repo or your own copies of exercises. This public repo runs environment smoke checks only.
 
-## Open questions
-- How do the 6 hands-on scores map to 10 points?
-- Hands-on 1: exact deadline? (not submitted as of 19.10)
-- Homework 1 Task 4 dataset: used Olivetti faces as described. The stray line "Change this into another dataset." is still unexplained.
-- Other hands-on slides in L2 (cells 121, 133, 141, 154) have no task text. Were tasks given orally?
+## Scope
 
-## Applied ideas backlog
-See `applied/ideas.md`.
-
-## Session log
-| Date | What we did | Next |
-|---|---|---|
-| 18.10.2026 | Phase 0 inventory, Phase 1 repo setup, env built | Hands-on 2 in coach mode |
-| 18.10.2026 | AI policy recorded. HO2 code reviewed, clean run passes | HO2 written cells, then upload by 21.10 |
-| 18.10.2026 | HO2 approach, conclusion, disclosure written. Pre-submit passes | Upload HO2 by 21.10. Then Hands-on 1 status, Homework 1 plan |
-| 19.10.2026 | HO1 written by Claude on request, clean run passes | Upload HO1 and HO2. Then Homework 1 plan |
-| 30.10.2026 | HW1 solved by Claude (coach mode overridden on request). Submission in `homework/HW1/`, teaching notebook and walkthrough in `notes/homework/HW1/` | Review and upload HW1 today (deadline 30.10). Study the walkthrough |
-| 13.11.2026 | Wrote `prompts/05-cursor-handover.md` to hand the Block 2 files (L3 and L4, Homework 2, Hands-on 3 and 4) to Cursor | Attach files in Cursor, paste the prompt, then answer its inventory questions |
-| 13.11.2026 | Unzipped L3-L5 from Downloads, flattened folders, added `course/homework/Homework2.ipynb`, inventory Step 2 (waiting on "go") | Confirm HO1/HO2/HW1 uploads; itslearning HO3/4 deadlines; reply **go** for scratch runs + coach mode |
+Coursework for Arcada. MIT license covers my notes and scripts here. Lecture PDFs and submit notebooks are excluded. See [course/README.md](course/README.md).

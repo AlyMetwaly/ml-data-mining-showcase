@@ -1,0 +1,12 @@
+---
+description: Arcada ML course study rules (public repo)
+alwaysApply: true
+---
+
+# ML course repo (public showcase)
+
+- Coach mode by default. No full homework solutions unless the user says "write it".
+- `course/` content is not in this repo. Do not invent lecture file paths beyond `course/README.md`.
+- Every graded notebook (private) ends with an AI disclosure cell. Public repo keeps `ai-use-log.md` and write-ups.
+- Pre-submit: Restart and Run All, markdown answers, verify numbers against outputs.
+- No employer names, internal data, or unpublished solution notebooks in commits to this repo.

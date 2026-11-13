@@ -1,0 +1,7 @@
+# Paths removed from the public export (git filter-repo --invert-paths).
+# Regenerate: see scripts/export-public.ps1
+course/
+handson/HO1/hands-on-1.ipynb
+handson/HO2/hands-on-2.ipynb
+homework/HW1/Aly-Metwaly-homework-1.ipynb
+notes/homework/
